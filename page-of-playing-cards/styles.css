@@ -1,0 +1,40 @@
+/* Container styling */
+#playing-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Card styling */
+.card {
+    width: 150px;
+    height: 220px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: white;
+}
+
+/* Positioning children within the card */
+.left {
+    align-self: flex-start;
+    font-weight: bold;
+}
+
+.middle {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+}
+
+.right {
+    align-self: flex-end;
+    font-weight: bold;
+    transform: rotate(180deg); /* Style choice: flip the bottom corner */
+}
