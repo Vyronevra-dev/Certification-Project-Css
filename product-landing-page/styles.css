@@ -1,0 +1,34 @@
+/* Ensure navbar stays at the top */
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 10px 20px;
+}
+
+#header-img {
+    width: 50px;
+}
+
+/* Flexbox for nav-links */
+#nav-bar {
+    display: flex;
+    gap: 20px;
+}
+
+/* Add margin to body to account for fixed header */
+body {
+    margin-top: 80px;
+    font-family: sans-serif;
+}
+
+/* Media Query */
+@media (max-width: 600px) {
+    #header {
+        flex-direction: column;
+    }
+}
